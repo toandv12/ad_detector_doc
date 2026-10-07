@@ -17,7 +17,7 @@
 
   <header class="page-header">
     <div class="container">
-      <span class="badge">Updated: July 20, 2026</span>
+      <span class="badge">Updated: October 7, 2026</span>
       <h1>Privacy Policy</h1>
       <p class="lead">This policy explains how Ad Detector handles data and device permissions.</p>
     </div>
@@ -39,26 +39,27 @@
         </ul>
         <p>This information is used to create a list of apps that need attention and explain the reasons for each assessment.</p>
 
-        <h2>3. Personal Data</h2>
-        <p>The current version does not require users to create an account and does not actively collect names, phone numbers, addresses, contacts, messages, photos, or personal content.</p>
+        <h2>3. Personal Data and Advertising</h2>
+        <p>The current version does not require users to create an account and does not ask for names, phone numbers, addresses, contacts, messages, photos, or personal content.</p>
+        <p>Ad Detector displays ads using the Google Mobile Ads SDK (AdMob). Google and its advertising partners may process device identifiers, IP address, app interactions, diagnostic information, and approximate location derived from network information to deliver, measure, and protect advertising. Their processing is governed by their own policies and the consent choices available to the user.</p>
 
         <h2>4. Local Data Processing</h2>
-        <p>App analysis is performed on the device. The list of installed apps is not uploaded to our servers unless a future online feature is added and users are clearly notified before using it.</p>
+        <p>App analysis is performed on the device. Ad Detector does not upload the scanned app list or scan history to our servers. Internet access is used by the advertising SDK to request and display ads.</p>
 
         <h2>5. Permissions</h2>
-        <p>Depending on the version and features used, Ad Detector may request or guide users to grant the following permissions:</p>
+        <p>The released version uses the following Android capabilities:</p>
         <ul>
-          <li><strong>App visibility:</strong> used to analyze apps on the device within the limits permitted by Android.</li>
-          <li><strong>Usage Access:</strong> used only if the app provides a feature for analyzing recent app activity. Users may decline this permission.</li>
-          <li><strong>Notifications:</strong> used to notify users when a scan is complete, with their consent.</li>
+          <li><strong>Limited app visibility:</strong> Android package queries are used to find launchable apps and apps that declare an Accessibility Service or a boot receiver. Ad Detector does not request the broad <code>QUERY_ALL_PACKAGES</code> permission.</li>
+          <li><strong>Internet and network state:</strong> used to load and display ads through Google Mobile Ads.</li>
+          <li><strong>System settings links:</strong> the app may open relevant Android settings pages so users can review another app's information or permissions.</li>
         </ul>
         <p>Ad Detector cannot grant itself permissions or change another app's permissions without user action in Android settings.</p>
 
         <h2>6. Third-Party Services</h2>
-        <p>If the app uses services such as Google Play Services, Firebase Crashlytics, or Google AdMob, those services may process data according to their own policies. The actual list of services must be kept up to date with the released version of the app.</p>
+        <p>The released version uses Google Mobile Ads (AdMob) to display advertising. Google may collect and process information as described in the <a href="https://policies.google.com/privacy"><strong>Google Privacy Policy</strong></a> and <a href="https://policies.google.com/technologies/ads"><strong>Google advertising policies</strong></a>. Ad Detector does not currently integrate Firebase Analytics or Firebase Crashlytics.</p>
 
         <h2>7. Data Retention and Deletion</h2>
-        <p>Scan history and the list of apps marked as safe are stored locally. Users can delete app data in Ad Detector's settings or erase all data through the app information page in Android settings.</p>
+        <p>Scan history and the list of apps marked as safe or ignored are stored locally. Users can clear scan history in Ad Detector's settings or erase all local data through the app information page in Android settings. Data processed by Google for advertising is retained according to Google's policies and user controls.</p>
 
         <h2>8. Security</h2>
         <p>We apply reasonable measures to limit unauthorized access. However, no method of data storage or transmission can guarantee absolute security.</p>

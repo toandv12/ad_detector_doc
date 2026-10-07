@@ -7,12 +7,17 @@ Files:
 - style.css: Shared styles
 - assets/logo.png: Shared site logo and favicon
 
-Before publishing:
-1. Confirm that toandv5@gmail.com is the correct contact email.
-2. Replace the Google Play link when the app is released.
-3. Update the actual SDK list in privacy.html.
-4. Verify the permissions the app actually uses.
-5. If AdMob, Firebase, or Analytics is used, describe it accurately in the Privacy Policy.
+Release information:
+- Status: Available on Google Play
+- Package: com.ton.addetector
+- Store: https://play.google.com/store/apps/details?id=com.ton.addetector
+- Version documented: 1.0.0 (version code 5)
+
+Maintenance checklist:
+1. Keep the contact email current.
+2. Keep the Privacy Policy aligned with the production app's SDKs and data practices.
+3. Update the Store URL if the application ID changes.
+4. Review the public website whenever permissions, advertising, or scan behavior changes.
 
 Publishing with GitHub Pages:
 - Upload all files to the repository.
