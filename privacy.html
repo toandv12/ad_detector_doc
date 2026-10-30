@@ -17,7 +17,7 @@
 
   <header class="page-header">
     <div class="container">
-      <span class="badge">Updated: October 23, 2026</span>
+      <span class="badge">Updated: October 30, 2026</span>
       <h1>Privacy Policy</h1>
       <p class="lead">This policy explains how Ad Detector handles data and device permissions.</p>
     </div>
@@ -36,6 +36,7 @@
           <li>App installation or update times.</li>
           <li>Certain permissions and technical components that Android allows the app to inspect, such as whether an app can display over other apps or uses Accessibility.</li>
           <li>Assessment results and scan history stored on the device.</li>
+          <li>If the user turns on usage access: which apps came to the foreground in the last 30 minutes (package name, screen name, and time). This is used only by the "Just saw an ad?" screen and is not saved.</li>
         </ul>
         <p>This information is used to create a list of apps that need attention and explain the reasons for each assessment.</p>
 
@@ -45,15 +46,17 @@
         <p>Where required by law (for example in the European Economic Area, the United Kingdom, Switzerland, and certain US states), Ad Detector uses Google's User Messaging Platform to ask for consent or show privacy choices before ads are personalized. Users can review or change these choices at any time under <strong>Settings → Privacy options</strong> in the app.</p>
 
         <h2>4. Local Data Processing</h2>
-        <p>App analysis is performed on the device. Ad Detector does not upload the scanned app list or scan history to our servers. Internet access is used by the advertising SDK to request and display ads.</p>
+        <p>App analysis is performed on the device. Ad Detector does not upload the scanned app list, scan history, or app usage data to our servers. Internet access is used by the advertising SDK to request and display ads.</p>
 
         <h2>5. Permissions</h2>
-        <p>Ad Detector uses the following Android capabilities. None of them shows a permission prompt, and none gives access to personal content:</p>
+        <p>Ad Detector uses the following Android capabilities. Only usage access needs the user to turn it on, and none gives access to personal content:</p>
         <ul>
           <li><strong>Limited app visibility:</strong> Android package queries are used to find launchable apps and apps that declare an Accessibility Service or a boot receiver. Ad Detector does not request the broad <code>QUERY_ALL_PACKAGES</code> permission.</li>
           <li><strong>Internet and network state:</strong> used to load and display ads through Google Mobile Ads.</li>
           <li><strong>Hide other apps' overlays (<code>HIDE_OVERLAY_WINDOWS</code>):</strong> on Android 12 and later, windows drawn by other apps on top of Ad Detector are hidden while Ad Detector is open, to block overlay ads and tap hijacking on its own screens.</li>
           <li><strong>Request uninstall (<code>REQUEST_DELETE_PACKAGES</code>):</strong> lets the app open Android's own uninstall confirmation for an app the user chooses. Ad Detector cannot remove any app by itself; Android always asks the user to confirm.</li>
+          <li><strong>Usage access (<code>PACKAGE_USAGE_STATS</code>):</strong> optional, and only read after the user turns on "Usage access" for Ad Detector in Android settings. The "Just saw an ad?" screen reads which apps came to the foreground in the last 30 minutes (package name, screen name, and time) to find the app that just showed a full-screen ad. This is processed on the device, is not stored, and is never sent off the device. Users can turn usage access off at any time in Android settings.</li>
+          <li><strong>Quick Settings tile:</strong> an optional "Just saw an ad?" button the user can add to Quick Settings. It only opens Ad Detector.</li>
           <li><strong>System settings links:</strong> the app may open relevant Android settings pages so users can review another app's information or permissions.</li>
         </ul>
         <p>Ad Detector cannot grant itself permissions or change another app's permissions without user action in Android settings.</p>
