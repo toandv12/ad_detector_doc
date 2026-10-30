@@ -11,7 +11,7 @@ Release information:
 - Status: Available on Google Play
 - Package: com.ton.addetector
 - Store: https://play.google.com/store/apps/details?id=com.ton.addetector
-- Version documented: 1.4.0 (version code 9)
+- Version documented: 1.2.0 (version code 7), released 2026-10-19
 - Privacy Policy updated 2026-10-23 ahead of the next release: documents HIDE_OVERLAY_WINDOWS
   (since 1.1.0) and REQUEST_DELETE_PACKAGES (uninstall button), ad consent via UMP,
   and the "trusted apps" list
